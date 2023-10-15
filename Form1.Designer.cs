@@ -265,8 +265,9 @@
             this.Controls.Add(this.enemy);
             this.Controls.Add(this.player);
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Catch Enemy";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pLife3)).EndInit();
