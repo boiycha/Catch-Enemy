@@ -39,11 +39,15 @@
             this.lOver = new System.Windows.Forms.Label();
             this.lHigh = new System.Windows.Forms.Label();
             this.lValue = new System.Windows.Forms.Label();
+            this.gMenu = new System.Windows.Forms.GroupBox();
+            this.lRestart = new System.Windows.Forms.Label();
+            this.lQuit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLife3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLife2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLife1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            this.gMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -95,7 +99,7 @@
             // enemy
             // 
             this.enemy.Image = global::Brick_Game.Properties.Resources.icons8_eight_pointed_star_48__1_;
-            this.enemy.Location = new System.Drawing.Point(227, 111);
+            this.enemy.Location = new System.Drawing.Point(227, 95);
             this.enemy.Name = "enemy";
             this.enemy.Size = new System.Drawing.Size(48, 48);
             this.enemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -106,7 +110,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Image = global::Brick_Game.Properties.Resources.icons8_chimpanzee_48;
-            this.player.Location = new System.Drawing.Point(157, 277);
+            this.player.Location = new System.Drawing.Point(121, 331);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(48, 48);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -118,7 +122,7 @@
             this.lOver.AutoSize = true;
             this.lOver.Font = new System.Drawing.Font("Imprint MT Shadow", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lOver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lOver.Location = new System.Drawing.Point(66, 186);
+            this.lOver.Location = new System.Drawing.Point(24, 24);
             this.lOver.Name = "lOver";
             this.lOver.Size = new System.Drawing.Size(261, 51);
             this.lOver.TabIndex = 6;
@@ -145,15 +149,50 @@
             this.lValue.TabIndex = 8;
             this.lValue.Text = "0";
             // 
+            // gMenu
+            // 
+            this.gMenu.Controls.Add(this.lQuit);
+            this.gMenu.Controls.Add(this.lRestart);
+            this.gMenu.Controls.Add(this.lOver);
+            this.gMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gMenu.Location = new System.Drawing.Point(31, 149);
+            this.gMenu.Name = "gMenu";
+            this.gMenu.Size = new System.Drawing.Size(330, 176);
+            this.gMenu.TabIndex = 9;
+            this.gMenu.TabStop = false;
+            this.gMenu.Text = "Menu";
+            // 
+            // lRestart
+            // 
+            this.lRestart.AutoSize = true;
+            this.lRestart.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lRestart.Location = new System.Drawing.Point(104, 85);
+            this.lRestart.Name = "lRestart";
+            this.lRestart.Size = new System.Drawing.Size(89, 27);
+            this.lRestart.TabIndex = 10;
+            this.lRestart.Text = "Restart";
+            this.lRestart.Click += new System.EventHandler(this.lRestart_Click);
+            // 
+            // lQuit
+            // 
+            this.lQuit.AutoSize = true;
+            this.lQuit.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lQuit.Location = new System.Drawing.Point(119, 124);
+            this.lQuit.Name = "lQuit";
+            this.lQuit.Size = new System.Drawing.Size(61, 27);
+            this.lQuit.TabIndex = 11;
+            this.lQuit.Text = "Quit";
+            this.lQuit.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(382, 403);
+            this.Controls.Add(this.gMenu);
             this.Controls.Add(this.lValue);
             this.Controls.Add(this.lHigh);
-            this.Controls.Add(this.lOver);
             this.Controls.Add(this.pLife3);
             this.Controls.Add(this.pLife2);
             this.Controls.Add(this.pLife1);
@@ -170,6 +209,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pLife1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            this.gMenu.ResumeLayout(false);
+            this.gMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +228,9 @@
         private System.Windows.Forms.Label lOver;
         private System.Windows.Forms.Label lHigh;
         private System.Windows.Forms.Label lValue;
+        private System.Windows.Forms.GroupBox gMenu;
+        private System.Windows.Forms.Label lQuit;
+        private System.Windows.Forms.Label lRestart;
     }
 }
 
