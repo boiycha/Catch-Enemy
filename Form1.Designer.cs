@@ -37,6 +37,8 @@
             this.enemy = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.lOver = new System.Windows.Forms.Label();
+            this.lHigh = new System.Windows.Forms.Label();
+            this.lValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pLife3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLife2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pLife1)).BeginInit();
@@ -54,7 +56,7 @@
             // 
             this.lScore.AutoSize = true;
             this.lScore.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lScore.Location = new System.Drawing.Point(12, 33);
+            this.lScore.Location = new System.Drawing.Point(12, 44);
             this.lScore.Name = "lScore";
             this.lScore.Size = new System.Drawing.Size(106, 27);
             this.lScore.TabIndex = 2;
@@ -93,7 +95,7 @@
             // enemy
             // 
             this.enemy.Image = global::Brick_Game.Properties.Resources.icons8_eight_pointed_star_48__1_;
-            this.enemy.Location = new System.Drawing.Point(140, 86);
+            this.enemy.Location = new System.Drawing.Point(227, 111);
             this.enemy.Name = "enemy";
             this.enemy.Size = new System.Drawing.Size(48, 48);
             this.enemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -122,12 +124,35 @@
             this.lOver.TabIndex = 6;
             this.lOver.Text = "Game-Over ";
             // 
+            // lHigh
+            // 
+            this.lHigh.AutoSize = true;
+            this.lHigh.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHigh.Location = new System.Drawing.Point(12, 86);
+            this.lHigh.Name = "lHigh";
+            this.lHigh.Size = new System.Drawing.Size(141, 27);
+            this.lHigh.TabIndex = 7;
+            this.lHigh.Text = "HighScore :";
+            this.lHigh.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lValue
+            // 
+            this.lValue.AutoSize = true;
+            this.lValue.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lValue.Location = new System.Drawing.Point(169, 86);
+            this.lValue.Name = "lValue";
+            this.lValue.Size = new System.Drawing.Size(25, 27);
+            this.lValue.TabIndex = 8;
+            this.lValue.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(382, 403);
+            this.Controls.Add(this.lValue);
+            this.Controls.Add(this.lHigh);
             this.Controls.Add(this.lOver);
             this.Controls.Add(this.pLife3);
             this.Controls.Add(this.pLife2);
@@ -160,6 +185,8 @@
         private System.Windows.Forms.PictureBox pLife2;
         private System.Windows.Forms.PictureBox pLife3;
         private System.Windows.Forms.Label lOver;
+        private System.Windows.Forms.Label lHigh;
+        private System.Windows.Forms.Label lValue;
     }
 }
 

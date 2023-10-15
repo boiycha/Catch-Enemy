@@ -19,6 +19,7 @@ namespace Brick_Game
         {
             InitializeComponent();
             lOver.Hide();
+            lValue.Text = Properties.Settings.Default.h_score;
             
         }
 
@@ -43,6 +44,15 @@ namespace Brick_Game
                 pLife3.Image = Properties.Resources.icons8_spade_suit_48;
                 lOver.Show();
                 timer1.Stop();
+
+                int a = Int32.Parse(lValue.Text);
+
+                if (score > a)
+                {
+                    lValue.Text = score.ToString();
+                    Properties.Settings.Default.h_score = lValue.Text;
+                    Properties.Settings.Default.Save();
+                }
 
                 
             }
@@ -101,6 +111,11 @@ namespace Brick_Game
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
