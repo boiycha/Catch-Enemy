@@ -18,7 +18,9 @@ namespace Brick_Game
         public Form1()
         {
             InitializeComponent();
+            
             gMenu.Hide();
+            gPause.Hide();
             lValue.Text = Properties.Settings.Default.h_score;
             
         }
@@ -136,6 +138,49 @@ namespace Brick_Game
             pLife2.Image = Properties.Resources.icons8_heart_suit_48;
             pLife3.Image = Properties.Resources.icons8_heart_suit_48;
             life = 0;
+        }
+
+        private void lPause_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                timer1.Enabled = false;
+                //gMenu.Show();
+                gPause.Show();
+                timer1.Stop();
+                lPause.Enabled = false;
+            }
+            else
+            {
+                timer1.Enabled = true;
+            }
+        }
+
+        private void lQuit2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            timer1.Start();
+            gMenu.Hide();
+            player.Location = new Point(105, 270);
+            enemy.Location = new Point(227, 10);
+            lScore.Text = "Score: 0";
+            pLife1.Image = Properties.Resources.icons8_heart_suit_48;
+            pLife2.Image = Properties.Resources.icons8_heart_suit_48;
+            pLife3.Image = Properties.Resources.icons8_heart_suit_48;
+            life = 0;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            gPause.Hide();
+            lPause.Enabled = true;
+            timer1.Enabled = true;
+            timer1.Start();
+
         }
 
         private void Form1KeyUp(object sender, KeyEventArgs e)
