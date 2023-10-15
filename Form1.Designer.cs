@@ -194,11 +194,11 @@
             // 
             this.lPause.AutoSize = true;
             this.lPause.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lPause.Location = new System.Drawing.Point(308, 352);
+            this.lPause.Location = new System.Drawing.Point(286, 352);
             this.lPause.Name = "lPause";
-            this.lPause.Size = new System.Drawing.Size(31, 27);
+            this.lPause.Size = new System.Drawing.Size(75, 27);
             this.lPause.TabIndex = 12;
-            this.lPause.Text = "| |";
+            this.lPause.Text = "Pause";
             this.lPause.Click += new System.EventHandler(this.lPause_Click);
             // 
             // gPause

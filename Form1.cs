@@ -164,7 +164,9 @@ namespace Brick_Game
         private void label2_Click_1(object sender, EventArgs e)
         {
             timer1.Start();
-            gMenu.Hide();
+            
+            lPause.Enabled = true;
+            gPause.Hide();
             player.Location = new Point(105, 270);
             enemy.Location = new Point(227, 10);
             lScore.Text = "Score: 0";
