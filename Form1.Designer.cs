@@ -53,10 +53,10 @@
             // lScore
             // 
             this.lScore.AutoSize = true;
-            this.lScore.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lScore.Location = new System.Drawing.Point(12, 35);
+            this.lScore.Font = new System.Drawing.Font("Imprint MT Shadow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lScore.Location = new System.Drawing.Point(12, 33);
             this.lScore.Name = "lScore";
-            this.lScore.Size = new System.Drawing.Size(132, 35);
+            this.lScore.Size = new System.Drawing.Size(106, 27);
             this.lScore.TabIndex = 2;
             this.lScore.Text = "Score : 0";
             // 
@@ -115,9 +115,10 @@
             // 
             this.lOver.AutoSize = true;
             this.lOver.Font = new System.Drawing.Font("Imprint MT Shadow", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lOver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lOver.Location = new System.Drawing.Point(66, 186);
             this.lOver.Name = "lOver";
-            this.lOver.Size = new System.Drawing.Size(269, 52);
+            this.lOver.Size = new System.Drawing.Size(261, 51);
             this.lOver.TabIndex = 6;
             this.lOver.Text = "Game-Over ";
             // 
