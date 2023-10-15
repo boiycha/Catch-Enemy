@@ -8,3 +8,13 @@ D:\Учеба\Программирование\Brick Game\obj\Debug\Brick Game.c
 D:\Учеба\Программирование\Brick Game\obj\Debug\Brick Game.csproj.CoreCompileInputs.cache
 D:\Учеба\Программирование\Brick Game\obj\Debug\Brick Game.exe
 D:\Учеба\Программирование\Brick Game\obj\Debug\Brick Game.pdb
+D:\Учеба\Программирование\Windows Forms\Brick Game\bin\Debug\Brick Game.exe.config
+D:\Учеба\Программирование\Windows Forms\Brick Game\bin\Debug\Brick Game.exe
+D:\Учеба\Программирование\Windows Forms\Brick Game\bin\Debug\Brick Game.pdb
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick Game.csproj.AssemblyReference.cache
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick_Game.Form1.resources
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick_Game.Properties.Resources.resources
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick Game.csproj.GenerateResource.cache
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick Game.csproj.CoreCompileInputs.cache
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick Game.exe
+D:\Учеба\Программирование\Windows Forms\Brick Game\obj\Debug\Brick Game.pdb

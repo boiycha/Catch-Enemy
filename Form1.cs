@@ -138,6 +138,7 @@ namespace Brick_Game
             pLife2.Image = Properties.Resources.icons8_heart_suit_48;
             pLife3.Image = Properties.Resources.icons8_heart_suit_48;
             life = 0;
+            score = 0;
         }
 
         private void lPause_Click(object sender, EventArgs e)
@@ -145,7 +146,7 @@ namespace Brick_Game
             if (timer1.Enabled)
             {
                 timer1.Enabled = false;
-                //gMenu.Show();
+                
                 gPause.Show();
                 timer1.Stop();
                 lPause.Enabled = false;
@@ -182,6 +183,11 @@ namespace Brick_Game
             lPause.Enabled = true;
             timer1.Enabled = true;
             timer1.Start();
+
+        }
+
+        private void gPause_Enter(object sender, EventArgs e)
+        {
 
         }
 
