@@ -19,6 +19,7 @@ namespace Brick_Game
         {
             InitializeComponent();
             lOver.Hide();
+            lValue.Text = Properties.Settings.Default.SettingsKey;
         }
 
         bool left, right;
@@ -42,6 +43,14 @@ namespace Brick_Game
                 pLife3.Image = Properties.Resources.icons8_spade_suit_48;
                 lOver.Show();
                 timer1.Stop();
+
+                int a = Int32.Parse(lValue.Text);
+                if (score > a)
+                {
+                    lValue.Text = score.ToString();
+                    Properties.Settings.Default.SettingsKey = lValue.Text;
+                    Properties.Settings.Default.Save();
+                }
             }
         }
 
@@ -95,6 +104,11 @@ namespace Brick_Game
             PlayerMove();
             EnemyMove();
             GameUpdate();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Form1KeyUp(object sender, KeyEventArgs e)
